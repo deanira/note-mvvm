@@ -23,8 +23,4 @@ class NoteController: ObservableObject {
             notes.remove(at: index)
         }
     }
-    
-    func findNote(id: String) -> Note {
-        notes.first(where: { $0.id.uuidString == id })!
-    }
 }
