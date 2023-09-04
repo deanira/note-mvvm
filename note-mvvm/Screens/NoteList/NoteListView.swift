@@ -32,7 +32,7 @@ struct NoteListView: View {
         }
         .sheet(isPresented: $viewModel.showAddView) {
             NavigationView {
-                NoteAddEditView(viewModel: viewModelFactory.makeNoteAddEditViewModel(note: viewModel.selectedNote), isPresented: $viewModel.showAddView)
+                NoteAddUpdateView(viewModel: viewModelFactory.makeNoteAddUpdateViewModel(note: viewModel.selectedNote), isPresented: $viewModel.showAddView)
                     .navigationBarItems(
                         leading:
                             Button("Cancel") {

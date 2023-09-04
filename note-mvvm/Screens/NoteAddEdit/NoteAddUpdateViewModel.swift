@@ -7,7 +7,7 @@
 
 import Foundation
 
-class NoteAddEditViewModel: ObservableObject {
+class NoteAddUpdateViewModel: ObservableObject {
     @Published var title = ""
     @Published var content = ""
     @Published var note: Note?

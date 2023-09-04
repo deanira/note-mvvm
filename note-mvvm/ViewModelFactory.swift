@@ -10,8 +10,8 @@ import Foundation
 class ViewModelFactory: ObservableObject {
     let noteController = NoteController()
     
-    func makeNoteAddEditViewModel(note: Note?) -> NoteAddEditViewModel {
-        return NoteAddEditViewModel(note: note, noteController: noteController)
+    func makeNoteAddUpdateViewModel(note: Note?) -> NoteAddUpdateViewModel {
+        return NoteAddUpdateViewModel(note: note, noteController: noteController)
     }
     
     func makeNoteDetailViewModel(note: Note) -> NoteDetailViewModel {

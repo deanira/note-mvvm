@@ -33,7 +33,7 @@ struct NoteDetailView: View {
         .navigationBarTitle("Note Detail")
         .sheet(isPresented: $viewModel.showEditView) {
             NavigationView {
-                NoteAddEditView(viewModel: viewModelFactory.makeNoteAddEditViewModel(note: viewModel.getNote()), isPresented: $viewModel.showEditView)
+                NoteAddUpdateView(viewModel: viewModelFactory.makeNoteAddUpdateViewModel(note: viewModel.getNote()), isPresented: $viewModel.showEditView)
                     .navigationBarItems(
                         leading:
                             Button("Cancel") {

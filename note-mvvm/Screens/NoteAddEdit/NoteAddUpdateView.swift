@@ -7,8 +7,8 @@
 
 import SwiftUI
 
-struct NoteAddEditView: View {
-    @ObservedObject var viewModel: NoteAddEditViewModel
+struct NoteAddUpdateView: View {
+    @ObservedObject var viewModel: NoteAddUpdateViewModel
     @Binding var isPresented: Bool
     
     var body: some View {
