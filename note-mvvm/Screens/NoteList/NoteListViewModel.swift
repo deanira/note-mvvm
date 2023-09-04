@@ -14,7 +14,6 @@ class NoteListViewModel: ObservableObject {
     @Published var selectedNote: Note?
     
     var noteController: NoteController
-    var string: [String] = []
     
     private var cancellables = Set<AnyCancellable>()
     
